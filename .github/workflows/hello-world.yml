@@ -12,7 +12,7 @@ jobs:
       - name: Test
         run: chmod +x ci/unit-test-app.sh && ci/unit-test-app.sh
       - name: Upload Repo
-        users: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: code
           path: .
